@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPWATCH</title>
+    <link rel="Stylesheet" href="watch.css">
+ </head>
+ <body>
+
+   <!-- full here video apperar for whole body -->
+
+<div class="full">
+    <video src="darkclock.mp4" id="background-video" autoplay muted loop></video>
+
+    <H2> -:STOPWATCH:-</H2>
+
+   <!--  HERE THE CONATINER START OF TIME -->
+ <div class="container">
+   <!--IN CONTAINER TIME BLOCK -->
+         <div class="time">
+
+ <!--IN  FULL== CONTAINER==TIME==DISPLAYTIME BLOCK -->
+                 <div id="displaytime"><h1>00:00:00:00</h1> </div>
+ <!-- TIME CLOSE -->
+          </div> 
+          
+          
+<!-- CONTAINER == MAIN-->
+      <div class="main">
+<!-- CONTAINER == MAIN==P==UL-->
+            <p id="date"></p>
+            <ul class="lap"></ul>
+<!--MAIN CLOSE -->
+      </div>
+<!-- CONTAINER CLOSE -->
+ </div>
+ </div>
+     
+<!-- FULL==BUTTON -->
+     <div class="buttons"> 
+                <button class="btn" id="start" onclick="start()">Start</button>
+                <button class="btn" id="stop" onclick="stop()">Stop</button>
+                <button class="btn" id="pause" onclick="pause()">Pause</button>
+                <button class="btn" id="reset" onclick="reset()">Reset</button>
+                <button class="btn" id="laps" onclick="lap()">Lap Time</button>
+                <button class="btn" id="reset-lap" onclick="resetLap()">Reset Lap</button>
+                <div class="div"> 
+                <p>-:LAP TIME:-</p>
+       </div>  
+      </div>
+    
+       
+          
+  </div>
+   
+          </div>
+         
+         
+          
+          <script src="watch.js"></script>
+       </body>
+       </html>
